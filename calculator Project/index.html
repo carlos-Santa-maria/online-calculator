@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta Data -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik+Dirt&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Style tag -->
+    <link rel="stylesheet" href="/styles/style.css" />
+    <!-- logo -->
+    <link
+      rel="shortcut icon"
+      href="/imgs/calculadora-service-logo.png"
+      type="image/x-icon"
+    />
+    <title>Online Calulator</title>
+  </head>
+  <body>
+    <div class="container text-center">
+      <h1 class="tittle">ONLINE CALCULATOR</h1>
+      <p class="description">Made by Carlos Santamaria</p>
+    </div>
+    <div class="container calculator">
+      <img class="cel-top" src="/imgs/cel-top.png" alt=" notifications img" />
+      <img
+        class="cellphone"
+        src="/imgs/telephone-img.png"
+        alt="cellphone img"
+      />
+    </div>
+    <div class="container elemets-container">
+      <input type="text" id="screen" readonly />
+      <br />
+      <input type="button" value="1" onclick="add('1')" />
+      <input type="button" value="2" onclick="add('2')" />
+      <input type="button" value="3" onclick="add('3')" />
+      <input type="button" value="+" onclick="add('+')" />
+      <br />
+      <input type="button" value="4" onclick="add('4')" />
+      <input type="button" value="5" onclick="add('5')" />
+      <input type="button" value="6" onclick="add('6')" />
+      <input type="button" value="-" onclick="add('-')" />
+      <br />
+      <input type="button" value="7" onclick="add('7')" />
+      <input type="button" value="8" onclick="add('8')" />
+      <input type="button" value="9" onclick="add('9')" />
+      <input type="button" value="*" onclick="add('*')" />
+      <br />
+      <input type="button" value="0" onclick="add('0')" />
+      <input type="button" value="." onclick="add('.')" />
+      <input type="button" value="/" onclick="add('/')" />
+      <input type="button" value="=" onclick="calc()" />
+      <br />
+      <input type="button" value="C" onclick="borrar()" />
+    </div>
+
+    <script src="/script.js"></script>
+  </body>
+</html>
